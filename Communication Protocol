@@ -3,9 +3,23 @@ As I tested this I noticed a lot of spurious USB comms hitting the micro:bit - m
 To filter out noise a messaging protocol is necessary.  
 For once in my life (not really, but you know what I mean ;) I am going to write the protocol before the code:
 
-FOR TRANSMITTING IMAGE DATA:
+RULES AND NORMS FOR TRANSMITTING IMAGE DATA:
 
 1 - data is sent row by row
 2 - multiple images can be sent sequentially
 3 - the receiving micro:bit will be able to show multiple images.
+4 - Excel will ONLY transmit numerals and upper case alphas
+
+
+Structure of a row of data:
+        P3410010
+        p   ___   3   ___   4   ___   10010
+        ID      Frame     Row         Image data
+         
+a single row of data ALWAYS has 8 chars
+a single row of data ALWAYS starts with "X"
+Second char is the target Frame (0 - 9 for 10 frames in total)
+Third char is the row that is being transmitted (0 to 4)
+Last 5 chars are the image data for the row (0 to 9 - intensity is transmitted)
+
 
