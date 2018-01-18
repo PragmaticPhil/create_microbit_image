@@ -1,3 +1,5 @@
+
+
 # create_microbit_image
 Simple and quick way to edit and create images for the micro:bit
 
@@ -33,7 +35,15 @@ And of course that tantalising micro:bit button!
 
 I left it in as a deliberate tease, of course ;)
 
-And... thanks to @LMcUnderwood for pointing out that you *might* get a FileNotFound error when you run things.
+And... some attributions... don't blame anyone below for any flaws - they pointed me at things I needed, and they bear no culpability for what I did with them!!!
+
+... https://github.com/fizban99/microbit_us100/blob/master/us100.py - the first decent example of a uart read I found 
+
+... Carlospherate - a colleague who pointed me out of a dark corner
+
+... Yigal Edery - a VBA master.  Without his help I wouldn't have had a chance!  And his excellent blog [] first made me realise that a link between Exvel and micro:bit was feasible.
+
+Ans also thanks to @LMcUnderwood for pointing out that you *might* get a FileNotFound error when you run things.
 If so, you can fix this by adding a full path for the images "led_ON.jpg" and "led_OFF.jpg" (just those 2 - not for the other 3 images).  Go into the VBA, search for these strings, and replace with the full path.
 
 Thanks!
