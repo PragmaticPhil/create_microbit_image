@@ -26,7 +26,7 @@ How To... 'install' the spreadsheet:
 
 3 = Enable macros
 
-----------------------------------------------------b
+----------------------------------------------------
 
 How To... edit an image:
 
@@ -44,7 +44,7 @@ How To... create a new image:
 
 2 = create your image - click the big tick when you are done.
 
-----------------------------------------------------b
+----------------------------------------------------
 
 How To... fling the image to the micro:bit:
 
@@ -71,7 +71,7 @@ Some attributions... don't blame anyone below for any flaws - they pointed me at
 
 ... Carlospherate - a colleague who pointed me out of a dark corner.
 
-... Yigal Edery - a VBA master.  Without his help I wouldn't have had a chance!  And his excellent blog [] first made me realise that a link between Exvel and micro:bit was feasible.
+... Yigal Edery - a VBA master.  Without his help (esp the COM port numbering issue and his brilliant Life game) I wouldn't have had a chance!  And his excellent blog [] first made me realise that a link between Exvel and micro:bit was feasible.
 
 And also thanks to @LMcUnderwood for pointing out a 'bug' (OK Lorainne - a bug not a 'bug' ;) in the original version I uploaded (image not found).
 
