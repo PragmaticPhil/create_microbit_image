@@ -1,6 +1,6 @@
 
 # create_microbit_image
-Simple and quick way to edit and create images for the micro:bit
+Simple and quick way to edit and create images and animations (up to 10 frames) for the micro:bit
 
 You can also 'fling' your images onto a micro:bit that is connected over serial.  Its quite cool, tbh!
 
