@@ -17,7 +17,7 @@ This works with Excel16 (desktop version) running on Win10.  I have no means to 
 
 With the App you can do the following:
 
-## IMAGES:
+### IMAGES:
 
 Create and edit images for the micro:bit 5x5 LED matrix (screen).
 
@@ -26,7 +26,7 @@ Send these images over serial to a connected micro:bit to review them (micro:bit
 Copy and paste the Python and Image code to use in your applications.
 
 
-## ANIMATIONS:
+### ANIMATIONS:
 
 Create and edit animations of up to 10 frames.
 
@@ -39,7 +39,7 @@ Copy the Python code - a full and working .py is generated with the animation.
 
 -----------------------------------------------------
 
-## ATRRIBUTIONS
+### ATRRIBUTIONS
 
 ... don't blame anyone below for any flaws - they pointed me at things I needed, and they bear no culpability for what I did with them!!!
 
@@ -55,4 +55,5 @@ Copy the Python code - a full and working .py is generated with the animation.
 
 
 Thanks!
+
 Philip M (PragmaticPhil)
