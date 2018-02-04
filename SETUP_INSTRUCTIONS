@@ -40,6 +40,11 @@ A very cool feature of ex:bit is the ability to preview images / animations you 
 You don't NEED this feature - you can preview them from inside Excel.
 But, as I mentioned above, it is pretty cool :)
 
+You need the mBed Serial Driver installed on your machine to enable comms between your machine and your micro:bit. 
+I think - looks like it to me (from literature and my own experience), although I never tried without it being installed.
+Check step 4 to see where to check if you have it installed.
+If you use Mu and REPL then you are fine.
+
 Anyway, to use this feature you will need to do the following:
 
 Step 1:
@@ -47,7 +52,7 @@ Download exbit_PreviewModule.hex
 Alternately download the exbit_PreviewModule.py file and convert it to a hex file using Mu or the online Python editor
 
 Step 2:
-Put the hex file onto your micro:bit
+Flash the hex file onto your micro:bit
 
 Step 3:
 Ensure your micro:bit is connected via USB to the machine on which ex:bit_ImageService.xlsm is running.
@@ -61,4 +66,19 @@ Click on this option and take note of the COM ID (i.e. the number - e.g. COM4 or
 
 Step 5:
 Enter the COM ID into the spreadsheet (you will see where).
+Do not change the BAUD (if you HAVE to make sure you change it in the .py too - they must be identical)
+
+And that should be it!
+
+Troubleshooting (First check steps 1 - 5 carefully above):
+
+... I click on the micro:bit image inside the spreadsheet but I see nothing on my micro:bit.
+... ... wait for up to 5 seconds (although it should appear within 1 second near enough)
+... ... Change your USB cable - just in case its a power-only one.
+... ... Is your COM ID > 9?  Excel struggles with this, so change to a single digit
+... ... Try clicking the micro:bit button multiple times, like an elevator button.  It actually does help!
+... ... Do you have the mBed Serial Driver installed?  Try reinstall if you are not sure.
+
+... The image on my micro:bit is missing a pixel, or perhaps has an extra pixel.
+... ... click the micro:bit button again - it should come right.
 
