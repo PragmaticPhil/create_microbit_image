@@ -29,6 +29,7 @@ Enable macros.
 You can now use the spreadsheet!
 You will need to enter the COM ID and BAUD to get the serial comms working - see below.
 
+
 Troubleshooting:
 ... buttons in the spreadsheet don't work?  Ensure macros are enabled and check the file is saved with .xlsm extension
 ... I get a file not found error (1) - check that the 2 images are saved in the same folder as the spreadsheet
@@ -75,6 +76,7 @@ Troubleshooting (First check steps 1 - 5 carefully above):
 
 ... I click on the micro:bit image inside the spreadsheet but I see nothing on my micro:bit.
 ... ... wait for up to 5 seconds (although it should appear within 1 second near enough)
+... ... try again!  Seriously! Plug in and out your micro:bit and try again. Esp after you have changed your COM port ID.
 ... ... Change your USB cable - just in case its a power-only one.
 ... ... Is your COM ID > 9?  Excel struggles with this, so change to a single digit
 ... ... Try clicking the micro:bit button multiple times, like an elevator button.  It actually does help!
