@@ -1,3 +1,16 @@
 
 # Getting started with ex:bit:
 
+
+### EXCEL:
+The app is built in Excel - it is a spreadsheet.
+
+You will need to do the following:
+
+** Step 1:**
+Move the following files to a location accessible from your machine.  All files listed below need to be saved in the same location:
+* exbit_ImageService_02.xlsm
+* led_OFF.jpg
+* led_ON.jpg
+
+** Step 2:**
