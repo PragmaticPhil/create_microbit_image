@@ -1,9 +1,8 @@
 
 # Getting started with ex:bit:
 
----------
+---------### EXCEL:------------------------------------------------------------------------------
 
-### EXCEL:
 The app is built in Excel - it is a spreadsheet.
 I built it and tested it using:
 * Excel 2016
@@ -17,7 +16,7 @@ So you can use the spreadsheet as a stand-alone tool.
 
 To use ex:bit you will need to do the following:
 
-Step 1:
+__Step 1:__
 Move the following files to a location accessible from your machine.  All files listed below need to be saved in the same location:
 * exbit_ImageService_02.xlsm
 * led_OFF.jpg
@@ -27,3 +26,4 @@ Step 2:
 Open the spreadsheet in Excel (DESKTOP version)
 Enable macros.
 
+You can now use the spreadsheet!
