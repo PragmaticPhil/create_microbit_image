@@ -17,9 +17,9 @@ This works with Excel16 (desktop version) running on Win10.  I have no means to 
 
 ### IMAGES:
 
-Create and edit images for the micro:bit 5x5 LED matrix (screen).
+Create and edit images for the micro:bit 5x5 LED matrix (screen) in an easy to use UI in exbit in Excel.
 
-Send these images over serial to a connected micro:bit to review them (micro:bit must be running the supplied code)
+Send these images over serial to a connected micro:bit to review them (NB: micro:bit must be running the supplied code)
 
 Copy and paste the Python and Image code to use in your applications.
 
@@ -33,7 +33,7 @@ Use images you have created to construct these animations.
 
 Review the animations in-app or on your connected micro:bit (micro:bit must be running the supplied code)
 
-Copy the Python code - a full and working .py is generated with the animation.
+Copy the Python code - a full and working .py is generated with the animation :)
 
 -----------------------------------------------------
 
@@ -41,7 +41,7 @@ Copy the Python code - a full and working .py is generated with the animation.
 
 ... don't blame anyone below for any flaws - they pointed me at things I needed, and they bear no culpability for what I did with them!!!
 
-... https://github.com/fizban99/microbit_us100/blob/master/us100.py - the first decent example of a uart read I found for micro:bit running microPython.
+... https://github.com/fizban99/microbit_us100/blob/master/us100.py - the first decent example of a uart read I found for micro:bit running microPython that actually worked for me.  Best Eureka moment for ages, thanks :)
 
 ... Carlospherate - a colleague and well known micro:bit maestro who pointed me out of a dark corner.  Twice!
 
@@ -49,7 +49,7 @@ Copy the Python code - a full and working .py is generated with the animation.
 
 https://techcommunity.microsoft.com/t5/Excel-Blog/Excel-and-Micro-Bit-Hacking-for-fun-and-creativity/ba-p/63603
 
-... @LMcUnderwood for testing several iterations and identifying a bunch of bugs.  Also for challenging me to add in new functionality that helps with UX (esp the preview capabilities in the animation form.
+... @LMcUnderwood for testing several iterations and identifying a bunch of bugs and UX fails.  Also for challenging me to add in new functionality that helps with UX (esp the preview capabilities in the animation form).
 
 ----------------------------------------------------
 
