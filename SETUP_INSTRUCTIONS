@@ -1,4 +1,3 @@
-
 # Getting started with ex:bit:
 
 ### --------- EXCEL:------------------------------------------------------------------------------
@@ -27,6 +26,7 @@ Open the spreadsheet in Excel (DESKTOP version)
 Enable macros.
 
 You can now use the spreadsheet!
+You will need to enter the COM ID and BAUD to get the serial comms working - see below.
 
 Troubleshooting:
 ... buttons in the spreadsheet don't work?  Ensure macros are enabled and check the file is saved with .xlsm extension
@@ -34,8 +34,31 @@ Troubleshooting:
 ... I get a file not found error (2) - this can happen if you try to use Serial Comms and the micro:bit is not plugged in.
 
 
-### --------- EBABLING SERIAL COMMS:----------------------------------------------------------------
+### --------- ENABLING SERIAL COMMS:----------------------------------------------------------------
 
 A very cool feature of ex:bit is the ability to preview images / animations you are making on a connected micro:bit.
 You don't NEED this feature - you can preview them from inside Excel.
 But, as I mentioned above, it is pretty cool :)
+
+Anyway, to use this feature you will need to do the following:
+
+Step 1:
+Download exbit_PreviewModule.hex
+Alternately download the exbit_PreviewModule.py file and convert it to a hex file using Mu or the online Python editor
+
+Step 2:
+Put the hex file onto your micro:bit
+
+Step 3:
+Ensure your micro:bit is connected via USB to the machine on which ex:bit_ImageService.xlsm is running.
+
+Step 4: 
+Identify the COM port that is associated with your micro:bit.
+... go to Control Panel / Devices and Printers
+... ensure your micro:bit is plugged in.
+... you SHOULD see and option "MBED SERIAL PORT" under UNSPECIFIED 
+Click on this option and take note of the COM ID (i.e. the number - e.g. COM4 or COM9)
+
+Step 5:
+Enter the COM ID into the spreadsheet (you will see where).
+
