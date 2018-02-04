@@ -49,7 +49,7 @@ If you use Mu and REPL then you are fine.
 Anyway, to use this feature you will need to do the following:
 
 Step 1:
-Download exbit_PreviewModule.hex
+Download exbit_PreviewModule.hex - you will find it in exbit_PreviewModule.zip
 Alternately download the exbit_PreviewModule.py file and convert it to a hex file using Mu or the online Python editor
 
 Step 2:
