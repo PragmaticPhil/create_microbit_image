@@ -39,7 +39,7 @@ Copy the Python code - a full and working .py is generated with the animation.
 
 -----------------------------------------------------
 
-### ATRRIBUTIONS
+### ATTRIBUTIONS
 
 ... don't blame anyone below for any flaws - they pointed me at things I needed, and they bear no culpability for what I did with them!!!
 
