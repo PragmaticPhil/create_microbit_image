@@ -1,6 +1,7 @@
 
 # Getting started with ex:bit:
 
+---------
 
 ### EXCEL:
 The app is built in Excel - it is a spreadsheet.
@@ -23,3 +24,6 @@ Move the following files to a location accessible from your machine.  All files 
 * led_ON.jpg
 
 Step 2:
+Open the spreadsheet in Excel (DESKTOP version)
+Enable macros.
+
