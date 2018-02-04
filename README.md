@@ -25,6 +25,7 @@ Send these images over serial to a connected micro:bit to review them (micro:bit
 
 Copy and paste the Python and Image code to use in your applications.
 
+----------------------------------------------------
 
 ### ANIMATIONS:
 
@@ -35,7 +36,6 @@ Use images you have created to construct these animations.
 Review the animations in-app or on your connected micro:bit (micro:bit must be running the supplied code)
 
 Copy the Python code - a full and working .py is generated with the animation.
-
 
 -----------------------------------------------------
 
