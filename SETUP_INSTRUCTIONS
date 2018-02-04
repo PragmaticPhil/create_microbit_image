@@ -4,13 +4,22 @@
 
 ### EXCEL:
 The app is built in Excel - it is a spreadsheet.
+I built it and tested it using:
+* Excel 2016
+* desktop version
+* running on Win10
+I cannot say for sure whether it will work if you have anything other than those 3 things.
 
-You will need to do the following:
+Note also that you do not need to get serial comms working to be able to use ex:bit.  
+The functionality to create, edit and preview images and animations works regardless.
+So you can use the spreadsheet as a stand-alone tool.
 
-** Step 1:**
+To use ex:bit you will need to do the following:
+
+Step 1:
 Move the following files to a location accessible from your machine.  All files listed below need to be saved in the same location:
 * exbit_ImageService_02.xlsm
 * led_OFF.jpg
 * led_ON.jpg
 
-** Step 2:**
+Step 2:
