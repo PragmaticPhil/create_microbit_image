@@ -15,8 +15,6 @@ This works with Excel16 (desktop version) running on Win10.  I have no means to 
 
 ----------------------------------------------------
 
-With the App you can do the following:
-
 ### IMAGES:
 
 Create and edit images for the micro:bit 5x5 LED matrix (screen).
