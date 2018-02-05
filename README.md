@@ -1,7 +1,7 @@
   
 # create_microbit_image
 
-Simple and quick way to edit and create images and animations (up to 10 frames) for the micro:bit.
+A simple, quick and fun way to edit and create images and animations (up to 10 frames) for the micro:bit.
 
 An easy UI allows you to create images / animations quickly, and outputs Python code for you to use in your apps.
 
