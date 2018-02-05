@@ -7,7 +7,7 @@ An easy UI allows you to create images / animations quickly, and outputs Python 
 
 You can also 'fling' your images / animations onto a micro:bit that is connected over serial.  Its quite cool, tbh!
 
-Read INSTALL_INSTRUCTIONS to get it onto your machine.
+Read SETUP_INSTRUCTIONS to get it onto your machine.
 
 NB:
 
@@ -59,11 +59,11 @@ I built this as a POC to see if Excel could be used to power my matrix (https://
 
 I have learned:
 
-... the method I am using to read data in Python is probably inefficient - I keep reading the buffer until the whole message has been sent.  For the matrix I need shorter messsages and a confirm routine.
+... the method I am using to read data in Python is probably inefficient - I keep reading the buffer until the whole message has been received.  For the matrix I need shorter messsages and a confirm routine.
 
 ... exbit will be a great way to 'program' the matrix (set up different nodes to play different animations / scroll), but needs a lot of speeding up to control in real time.
 
-So exbit is not really a thing - it will become the matrix:bit server, or something.  However, I have grown quite fond of exbit - it really is fun creating images on screen and viewing them.  I am tempted to add in new features - any ideas???
+So exbit was never meant to be a stand-alone thing - it will become the matrix:bit server, or something.  However, I have grown quite fond of exbit - it really is fun creating images on screen and viewing them.  I am tempted to add in new features - any ideas???
 
 
 
