@@ -31,9 +31,11 @@ You will need to enter the COM ID and BAUD to get the serial comms working - see
 
 
 Troubleshooting:
-... buttons in the spreadsheet don't work?  Ensure macros are enabled and check the file is saved with .xlsm extension
-... I get a file not found error (1) - check that the 2 images are saved in the same folder as the spreadsheet
-... I get a file not found error (2) - this can happen if you try to use Serial Comms and the micro:bit is not plugged in.
+... buttons in the spreadsheet don't work (they should bring up a form)?  
+... ... Ensure macros are enabled and check the file is saved with .xlsm extension
+... I get a file not found error 
+... ... (1) - check that the 2 images are saved in the same folder as the spreadsheet
+... ... (2) - this can happen if you try to use Serial Comms and the micro:bit is not plugged in.
 
 
 ### --------- ENABLING SERIAL COMMS:----------------------------------------------------------------
@@ -60,18 +62,24 @@ Step 3:
 Ensure your micro:bit is connected via USB to the machine on which ex:bit_ImageService.xlsm is running.
 
 Step 4: 
-Identify the COM port that is associated with your micro:bit (rem - ensure yr micro:bit is plugged in over USB).
-... go to START / DEVICE MANAGER / POSTS (COM 7 LTP)
-... you SHOULD see an option "MBED SERIAL PORT" or "USB SERIAL DEVICE" (apparently it depends on your machine)
-RIGHT CLICK on this option and select PROPERTIES.
-Take note of the COM ID (i.e. the number - e.g. COM4 or COM9)
-NB - if COM ID is greater than 9 you will need to change it (Excel doesn't like double-digit COM IDs).  
-To change your COM ID for your micro:bit:
-In the PROPERTIES  window click on PORT SETTINGS / ADVANCED then use the drop-down on the form to change COM ID to a single digit
+Identify the COM port that is associated with your micro:bit (rem - ensure your micro:bit is plugged in over USB first).
+... go to START / DEVICE MANAGER / PORTS (COM 7 LTP)
+... you SHOULD see an option "MBED SERIAL PORT" or "USB SERIAL DEVICE" (apparently it depends on your machine so maybe something else)
 
-Step 5:
+Take note of the COM ID (i.e. the number - e.g. COM4 or COM9)
+NB - if COM ID is greater than 9 you will need to change it (Excel doesn't work with double-digit COM IDs)... see next step.
+I find every time I plug in a micro:bit it is associated with a double-digit COM ID by default... grrrr!
+
+Step 5 (IF necessary):
+To change your COM ID for your micro:bit:
+Locate the device as you did in Step 4 (START / DEVICE MANAGER / PORTS (COM 7 LTP) / )
+RIGHT CLICK on this option and select PROPERTIES.
+In the PROPERTIES window click on PORT SETTINGS / ADVANCED then use the drop-down on the form to change COM ID to a single digit.
+
+Step 6:
 Enter the COM ID into the spreadsheet (you will see where).
-Do not change the BAUD (if you HAVE to make sure you change it in the .py too - they must be identical)
+Do not change the BAUD (if you HAVE to make sure you change it in the .py too - they must be identical).
+I found that the Python code running on my micro:bit does not like a very high BAUD.
 
 And that should be it!
 
