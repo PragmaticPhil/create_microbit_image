@@ -1,30 +1,30 @@
 from microbit import *
-from sys import print_exception
+#from sys import print_exception
 
-# first iteration - just set up a simple buffer that can carry 10 images.
+# We'll set up a simple String buffer that can carry 10 images (for previewing animations).
 global imageDataStore 
 imageDataStore = ["", "", "", "", "", "", "", "", "", ""]
 
-global imageDataReady
+global imageDataReady       #   This switch indicates when all data for an image (5 rows) has been loaded.
 imageDataReady = False
 
-# first iteration.  We will read each row into an array:
+# We will read each row into an array as they are received:
 global rawImageStrData
 rawImageStrData = ["", "", "", "", ""]
 
-# we use a switch - when an active row is detected we turn it True and we read into the array.
+# we use a switch - when an active row is detected (i.e. metadatas from serial comms indicates beginning of image data) we turn it True and read into the array.
 global activeRow
 activeRow = False
 
-global currentFrame
+global currentFrame     #   To support animation preview we will allow up to 10 frames to be sent over.
 currentFrame = 0
 
 global bufStrFromUSB
 bufStrFromUSB = ""
 
-uart.init(9600,8,1)
+#uart.init(9600,8,1)
 
-readBuf = bytearray(2)
+#readBuf = bytearray(2)
 
 def getComm():
     try:
@@ -39,18 +39,20 @@ def getComm():
 
     except Exception as exc:
         uart.init(9600)
-        print_exception(exc)
+        #print_exception(exc)
 
 def getImageDataFromUSB():
     global activeRow
     global bufStrFromUSB
-    intBuf = getComm()
     
+    intBuf = getComm()
+        
+        
     #   Rule: first char of a target comm mus be 'X' - ASCII = 88
     if(intBuf == 88):       # initialise a new raw row record:
         activeRow = True
         bufStrFromUSB = ""
-
+        
     #   Rule: a valid image record row will have 8, no more, no less, chars.
     if (len(bufStrFromUSB) == 8):
         activeRow = False           # we have received the full row of data - no need to process more.
@@ -69,13 +71,12 @@ def processRawRowData(rawRowStr):
     
     rawImageStrData[rowID] = rawImageData
     
-    checkAndFinaliseImage(0)
-    
-    #display.show(rawImageData)
-    #sleep(100)
+    checkAndFinaliseImage(frameID)
+
 
 def checkAndFinaliseImage(frameID):
     global imageDataReady
+    global rawImageStrData
     # we will check if all data for the current frame has been received - if so we'll add it to the imageID frame:
     imageIsReady = True
     
@@ -89,18 +90,20 @@ def checkAndFinaliseImage(frameID):
         imageDataStore[frameID] = allImageData
         display.show(Image(imageDataStore[frameID]))
         imageDataReady = True
+        
+        #for i in range(0, 4):
+        #    rawImageStrData[i] = ""     #   reset the buffer to ensure we only process a complete image
+             
 
 while True:
-    #if(not(imageDataReady)): getImageDataFromUSB()
     getImageDataFromUSB()
-    #display.show(str(chr(getComm())))
-    #sleep(500)
-    #display.show("*")    
-    #sleep(500)
 
     if(button_a.was_pressed()):
-        display.show(bufStrFromUSB)
-        #for i in range(len(readBuf)):
-        #    display.show(readBuf[i])
-        #    sleep(250)
-        
+        display.show(Image((imageDataStore[0])))
+        sleep(1000)
+        #uart.write("")
+
+    if(button_b.was_pressed()):
+        for i in range (0, 10):
+            display.show(Image((imageDataStore[i])))
+            sleep(500)
