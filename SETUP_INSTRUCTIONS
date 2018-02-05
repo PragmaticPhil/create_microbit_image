@@ -60,11 +60,14 @@ Step 3:
 Ensure your micro:bit is connected via USB to the machine on which ex:bit_ImageService.xlsm is running.
 
 Step 4: 
-Identify the COM port that is associated with your micro:bit.
-... go to Control Panel / Devices and Printers
-... ensure your micro:bit is plugged in.
-... you SHOULD see and option "MBED SERIAL PORT" under UNSPECIFIED 
-Click on this option and take note of the COM ID (i.e. the number - e.g. COM4 or COM9)
+Identify the COM port that is associated with your micro:bit (rem - ensure yr micro:bit is plugged in over USB).
+... go to START / DEVICE MANAGER / POSTS (COM 7 LTP)
+... you SHOULD see an option "MBED SERIAL PORT" or "USB SERIAL DEVICE" (apparently it depends on your machine)
+RIGHT CLICK on this option and select PROPERTIES.
+Take note of the COM ID (i.e. the number - e.g. COM4 or COM9)
+NB - if COM ID is greater than 9 you will need to change it (Excel doesn't like double-digit COM IDs).  
+To change your COM ID for your micro:bit:
+In the PROPERTIES  window click on PORT SETTINGS / ADVANCED then use the drop-down on the form to change COM ID to a single digit
 
 Step 5:
 Enter the COM ID into the spreadsheet (you will see where).
