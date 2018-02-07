@@ -20,6 +20,7 @@ Move the following files to a location accessible from your machine.  All files 
 * exbit_ImageService_02.xlsm
 * led_OFF.jpg
 * led_ON.jpg
+NOTE - you can customise how the Image forms look by editing / changing these 2 jpgs - if you do just keep them the same size.
 
 Step 2:
 Open the spreadsheet in Excel (DESKTOP version)
