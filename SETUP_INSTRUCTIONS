@@ -11,7 +11,7 @@ I cannot say for sure whether it will work if you have anything other than those
 
 Note also that you do not need to get serial comms working to be able to use ex:bit.  
 The functionality to create, edit and preview images and animations works regardless.
-So you can use the spreadsheet as a stand-alone tool.
+So you can use the spreadsheet as a stand-alone tool, OR run it with a connected micro:bit (running the correct code)
 
 To use ex:bit you will need to do the following:
 
@@ -20,7 +20,6 @@ Move the following files to a location accessible from your machine.  All files 
 * exbit_ImageService_02.xlsm
 * led_OFF.jpg
 * led_ON.jpg
-
 
 Step 2:
 Open the spreadsheet in Excel (DESKTOP version)
@@ -33,9 +32,13 @@ You will need to enter the COM ID and BAUD to get the serial comms working - see
 Troubleshooting:
 ... buttons in the spreadsheet don't work (they should bring up a form)?  
 ... ... Ensure macros are enabled and check the file is saved with .xlsm extension
+
 ... I get a file not found error 
 ... ... (1) - check that the 2 images are saved in the same folder as the spreadsheet
 ... ... (2) - this can happen if you try to use Serial Comms and the micro:bit is not plugged in.
+
+... I get some kind of run-time or fatal error
+... ... PLEASE let me know - open an issue or contact me directly.
 
 
 ### --------- ENABLING SERIAL COMMS:----------------------------------------------------------------
@@ -45,9 +48,9 @@ You don't NEED this feature - you can preview them from inside Excel.
 But, as I mentioned above, it is pretty cool :)
 
 You need the mBed Serial Driver installed on your machine to enable comms between your machine and your micro:bit. 
-I think - looks like it to me (from literature and my own experience), although I never tried without it being installed.
+... I think - looks like it to me (from literature and my own experience), although I never tried without it being installed.
 Check step 4 to see where to check if you have it installed.
-If you use Mu and REPL then you are fine.
+If you use the REPL with Mu then you are fine.
 
 Anyway, to use this feature you will need to do the following:
 
@@ -56,7 +59,7 @@ Download exbit_PreviewModule.hex - you will find it in exbit_PreviewModule.zip
 Alternately download the exbit_PreviewModule.py file and convert it to a hex file using Mu or the online Python editor
 
 Step 2:
-Flash the hex file onto your micro:bit
+Flash the hex file onto your micro:bit.
 
 Step 3:
 Ensure your micro:bit is connected via USB to the machine on which ex:bit_ImageService.xlsm is running.
@@ -86,14 +89,21 @@ And that should be it!
 Troubleshooting (First check steps 1 - 5 carefully above):
 
 ... I click on the micro:bit image inside the spreadsheet but I see nothing on my micro:bit.
-... ... wait for up to 5 seconds (although it should appear within 1 second near enough)
-... ... try again!  Seriously! Plug in and out your micro:bit and try again. Esp after you have changed your COM port ID.
+... ... restart your micro:bit... then wait a few seconds before trying to fling the image again
 ... ... Change your USB cable - just in case its a power-only one.
 ... ... Is your COM ID > 9?  Excel struggles with this, so change to a single digit
 ... ... Try clicking the micro:bit button multiple times, like an elevator button.  It actually does help!
 ... ... Do you have the mBed Serial Driver installed?  Try reinstall if you are not sure.
-... ... I found the different micro:bits can have different COM IDs, so always check ID is correct.
+... ... I found the different micro:bits can have different COM IDs, so always check ID is correct for the micro:bit you are using.
 
 ... The image on my micro:bit is missing a pixel, or perhaps has an extra pixel.
-... ... click the micro:bit button again - it should come right.
+... ... click the micro:bit button again - it should come right after 1 or 2 clicks.
+... ... and rem - although the image on the micro:bit may be missing a pixel or two, the Python code is complete.
 
+And please let me know if you:
+... encounter any bugs / problems 
+... have any great ideas for new features
+Raise an issue in GH or DM me on twitter - @PragmaticPhil
+
+Thanks
+Philip
