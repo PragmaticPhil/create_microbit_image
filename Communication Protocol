@@ -1,25 +1,23 @@
-As I tested this I noticed a lot of spurious USB comms hitting the micro:bit - mostly ASCII = 0.
 
-To filter out noise a messaging protocol is necessary.  
-For once in my life (not really, but you know what I mean ;) I am going to write the protocol before the code:
+To filter out noise over UART a messaging protocol is used.
 
 RULES AND NORMS FOR TRANSMITTING IMAGE DATA:
 
 1 - data is sent row by row
-2 - multiple images can be sent sequentially
-3 - the receiving micro:bit will be able to show multiple images.
+2 - multiple images can be sent sequentially, but where so a 1 second delay is put between send events.
+3 - the receiving micro:bit will be able to show multiple images (1 at a time - up to 10 stored in memory).
 4 - Excel will ONLY transmit numerals and upper case alphas
 
-
 Structure of a row of data:
-        P3410010
-        p   ___   3   ___   4   ___   10010
+        X3410010
+        X   ___   3   ___   4   ___   10010
         ID      Frame     Row         Image data
          
 a single row of data ALWAYS has 8 chars
 a single row of data ALWAYS starts with "X"
-Second char is the target Frame (0 - 9 for 10 frames in total)
+Second char is the target Frame (1 - 10 for 10 frames in total)
 Third char is the row that is being transmitted (0 to 4)
-Last 5 chars are the image data for the row (0 to 9 - intensity is transmitted)
-
+Last 5 chars are the image data for the row (0 to 9 - intensity is transmitted in theory, although UI doesn't accomodate it)
+Frame ID starts at 1 and goes from 1 - 10
+RowID starts at 0 and goes from 0 - 4
 
