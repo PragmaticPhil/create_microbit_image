@@ -49,7 +49,7 @@ Copy the Python code - a full and working .py is generated with the animation :)
 
 https://techcommunity.microsoft.com/t5/Excel-Blog/Excel-and-Micro-Bit-Hacking-for-fun-and-creativity/ba-p/63603
 
-... @LMcUnderwood for testing several iterations and identifying a bunch of bugs and UX fails.  Also for challenging me to add in new functionality that helps with UX (esp the preview capabilities in the animation form).
+And a HUGE thanks to @LMcUnderwood for testing loads of iterations and identifying countless bugs and UX fails.  Also for challenging me to add in new functionality that helps with UX.  I'd have palmed off a lot less polished version, but for Lorraines support.  
 
 ----------------------------------------------------
 
