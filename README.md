@@ -1,4 +1,5 @@
-  
+Just download "__DOWNLOAD_ME__.ZIP" - everything you need is in there :)
+
 # create_microbit_image
 
 A simple, quick and fun way to edit and create images and animations (up to 10 frames) for the micro:bit.
@@ -7,7 +8,7 @@ An easy UI allows you to create images / animations quickly, and outputs Python 
 
 You can also 'fling' your images / animations onto a micro:bit that is connected over serial.  Its quite cool, tbh!
 
-Read SETUP_INSTRUCTIONS to get it onto your machine.
+
 
 NB:
 
