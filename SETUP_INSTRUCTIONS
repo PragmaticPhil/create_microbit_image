@@ -56,14 +56,14 @@ If you use the REPL with Mu then you are fine.
 Anyway, to use this feature you will need to do the following:
 
 Step 1:
-Download exbit_PreviewModule.hex - you will find it in exbit_PreviewModule.zip
-Alternately download the exbit_PreviewModule.py file and convert it to a hex file using Mu or the online Python editor
+Locate exbit_HexFileForMicrobit.hex - you will find it in __DOWNLOAD_ME__.zip
+Alternately download the exbit_PythonCodeForMicrobit.py file and convert it to a hex file using Mu or the online Python editor
 
 Step 2:
 Flash the hex file onto your micro:bit.
 
 Step 3:
-Ensure your micro:bit is connected via USB to the machine on which ex:bit_ImageService.xlsm is running.
+Ensure your micro:bit is connected via USB to the machine on which exbit_ImageService_02.xlsm is running.
 
 Step 4: 
 Identify the COM port that is associated with your micro:bit (rem - ensure your micro:bit is plugged in over USB first).
